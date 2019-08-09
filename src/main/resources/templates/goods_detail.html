@@ -46,8 +46,7 @@
                 <span th:if="${seckillStatus eq 2}">秒杀已结束</span>
             </td>
             <td>
-                <span th:if="${seckillStatus eq 0}"><span id="countDown"
-                                                          th:text="${remainSeconds}"></span>秒</span>
+                <span th:if="${seckillStatus eq 0}"><span id="countDown" th:text="${remainSeconds}"></span>秒</span>
             </td>
             <td>
                 <form id="seckillForm" method="post" action="/seckill/do_seckill">
